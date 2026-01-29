@@ -1,0 +1,15 @@
+.ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.icon {
+    font-size: 32px;
+    /* розмір іконки */
+    color: #00b0ff;
+    /* колір */
+    margin-right: 8px;
+    /* відступ від тексту */
+}
