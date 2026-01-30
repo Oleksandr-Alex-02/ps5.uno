@@ -7,35 +7,36 @@ import css from './Social.module.css'
 const Social = () => {
 
     return (
-        <ul >
-            <li>
-                <a href="https://t.me/username" target="_blank" rel="noopener noreferrer">
-                    <BsTelephone className={css.icon} />
+        <ul className={css.social}>
+            <li className={css.li}>
+                <a href="https://t.me/mxiaomi" target="_blank" rel="noopener noreferrer">
+                    <FaTelegram className={css.icon_telegram} />
                 </a>
             </li>
-            <li>
+            <li className={css.li}>
                 <a href="viber://chat?number=%2B380931234567" target="_blank" rel="noopener noreferrer">
-                    <FaTelegram className={css.icon} />
+                    <FaViber className={css.icon_viber} />
                 </a>
             </li>
-            <li>
-                <a href="https://wa.me/380931234567" target="_blank" rel="noopener noreferrer">
-
-                    <AiFillTikTok className={css.icon} />
+            <li className={css.li}>
+                <a href="tel:+380958202612">
+                    <BsTelephone className={css.icon_phone} />
                 </a>
             </li>
-            <li>
+            <li className={css.li}>
                 <a href="https://instagram.com/username" target="_blank" rel="noopener noreferrer">
-                    <FaInstagram className={css.icon} />
+                    <FaInstagram className={css.icon_instagram} />
                 </a>
             </li>
-            <li>
+            <li className={css.li}>
                 <a href="https://www.tiktok.com/@username" target="_blank" rel="noopener noreferrer">
-                    <FaViber className={css.icon} />
+                    <AiFillTikTok className={css.icon_tiktok} />
                 </a>
             </li>
         </ul>
     )
 }
+
+
 
 export default Social;

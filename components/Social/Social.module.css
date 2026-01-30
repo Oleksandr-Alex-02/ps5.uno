@@ -1,15 +1,47 @@
-.ul {
-    list-style: none;
+.social {
     display: flex;
-    gap: 20px;
     align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 12px;
+    padding: 20px;
+
 }
 
-.icon {
-    font-size: 32px;
-    /* розмір іконки */
-    color: #00b0ff;
-    /* колір */
-    margin-right: 8px;
-    /* відступ від тексту */
+.li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 8px;
+    padding: auto;
+    width: 60px;
+    height: 60px;
+    border: 1px #7360f2;
+    border-radius: 10px;
+}
+
+.icon_telegram {
+    font-size: 45px;
+    color: #0088cc;
+}
+
+.icon_viber {
+    font-size: 45px;
+    color: #7360f2;
+}
+
+.icon_phone {
+    font-size: 45px;
+    color: #24d247;
+}
+
+.icon_instagram {
+    font-size: 45px;
+    color: #833AB4;
+}
+
+.icon_tiktok {
+    font-size: 45px;
+    color: #000000;
 }

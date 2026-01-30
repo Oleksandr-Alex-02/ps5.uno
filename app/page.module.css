@@ -1,4 +1,4 @@
-.container {
+.container_hero {
     display: flex;
     text-align: center;
     min-height: 600px;
@@ -39,4 +39,99 @@
     font-weight: 600;
     transition: background-color 0.3s ease;
     background-color: rgb(2, 110, 159);
+}
+
+.info_title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 16px;
+
+    margin-top: 120px;
+
+    font-weight: 700;
+    font-size: 42px;
+
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: var(--color-scheme-1-text);
+}
+
+/* Головний контейнер */
+.rent_block {
+    display: flex;
+    gap: 20px;
+    /* відстань між блоками */
+    justify-content: center;
+    /* вирівнювання по центру */
+    align-items: flex-start;
+    /* вирівнювання по верхньому краю */
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Окремий блок для кожної приставки */
+.rent_item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background: #fafafa;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовки */
+.rent_title {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.price_title {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* Застава */
+.deposit_label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+.deposit_option {
+    margin-left: 15px;
+    color: #555;
+}
+
+/* Список цін */
+.price_list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.price_item {
+    padding: 6px 0;
+    border-bottom: 1px dashed #ccc;
+    color: #333;
+}
+
+.price_item:last-child {
+    border-bottom: none;
+}
+
+/* Модифікатори для різних моделей */
+.ps5 {
+    border-left: 5px solid #007bff;
+    /* синій акцент */
+}
+
+.ps4pro {
+    border-left: 5px solid #28a745;
+    /* зелений акцент */
 }
