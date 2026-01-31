@@ -135,3 +135,85 @@
     border-left: 5px solid #28a745;
     /* зелений акцент */
 }
+
+/* ДОСТАВКА ПО КИЄВУ */
+
+.delivery_section {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.section_title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.sub_title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.delivery_option {
+    background-color: #fff;
+    border-left: 4px solid #007bff;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.delivery_text {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.delivery_note {
+    font-size: 0.9rem;
+    color: #888;
+    display: block;
+}
+
+.delivery_extra {
+    margin: 20px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.pickup_text {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.call_button {
+    margin-top: 20px;
+    background-color: #28a745;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.call_button:hover {
+    background-color: #218838;
+}
+
+.call_link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}

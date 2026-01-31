@@ -77,34 +77,48 @@ export default function Home() {
 
       </section>
 
+      <section className={css.delivery_section}>
+        <h2 className={css.section_title}>Доставка та самовивіз в Києві</h2>
+
+        <h4 className={css.sub_title}>ДОСТАВКА ПО КИЄВУ</h4>
+
+        <div className={css.delivery_option}>
+          <p className={css.delivery_text}>
+            Від 500 грн при замовленні в межах міста.
+          </p>
+          <span className={css.delivery_note}>*вартість вказана за 1 виїзд</span>
+        </div>
+
+        <div className={css.delivery_option}>
+          <p className={css.delivery_text}>
+            У радіусі 1 км від нас - 100 грн.
+          </p>
+          <span className={css.delivery_note}>*вартість вказана за 1 виїзд</span>
+        </div>
+
+        <p className={css.delivery_extra}>
+          У випадку, коли ви знаходитесь за межами міста, можливість доставки
+          обговорюється в індивідуальному порядку.
+        </p>
+
+        <h4 className={css.sub_title}>САМОВИВІЗ</h4>
+
+        <p className={css.pickup_text}>Попередньо телефонуйте за номером</p>
+        <p className={css.pickup_text}>+380958202612 та бронюйте час</p>
+
+        <button className={css.call_button}>
+          <a href="tel:+380958202612" className={css.call_link}>
+            +380958202612
+          </a>
+        </button>
+      </section>
+
+      <section className={css.rent_block}>
+        <KharkivHighway />
+        <Bakunska />
+      </section>
+
       <section>
-        <h2>Доставка та самовивіз в Києві</h2>
-
-        <h4>ДОСТАВКА ПО КИЄВУ</h4>
-        <div>
-          <p>Від 500 грн при замовленні в межах міста.</p>
-          <span>*вартість вказана за 1 виїзд</span>
-        </div>
-
-        <div>
-          <p>У радіусі 1 км від нас - 100 грн.</p>
-          <span>*вартість вказана за 1 виїзд</span>
-        </div>
-
-        <p>У випадку, коли ви знаходитесь за межами міста, можливість доставки обговорюється в індивідуальному порядку.</p>
-
-        <h4>САМОВИВІЗ</h4>
-        <p>Попередньо телефонуйте за номером</p>
-        <p>+380958202612 та бронюйте час</p>
-
-        <button><a href="tel:+380958202612">+380958202612</a></button>
-
-        <section>
-          <Bakunska />
-          <KharkivHighway />
-        </section>
-
-
         <div>
           <a href="tel:+380958202612">Телефонуй +380958202612</a>
           <p>Кожного дня з 09:00 - 20:00</p>

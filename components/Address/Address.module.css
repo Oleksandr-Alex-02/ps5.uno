@@ -1,0 +1,30 @@
+.pickup_block {
+    background-color: #fefefe;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pickup_text {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.pickup_address {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.pickup_map {
+    width: 600px;
+    max-width: 600px;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
