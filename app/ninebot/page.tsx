@@ -1,9 +1,14 @@
+import InDevelopment from '@/components/InDevelopment/InDevelopment'
 
 
 const Ninebot = () => {
+    const isDevelopment = true;
+    // const isDevelopment = false;
 
     return (
-        <div>Ninebot</div>
+        <section>
+            {isDevelopment ? <InDevelopment /> : ""}
+        </section>
     );
 };
 

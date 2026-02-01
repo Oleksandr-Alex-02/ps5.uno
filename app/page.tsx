@@ -118,18 +118,19 @@ export default function Home() {
         <Bakunska />
       </section>
 
-      <section>
-        <div>
-          <a href="tel:+380958202612">Телефонуй +380958202612</a>
-          <p>Кожного дня з 09:00 - 20:00</p>
-        </div>
 
-        <Social />
-
-        <div>
-          відгуки
+      <section className={css.hero_section}>
+        <div className={css.tel_blok}>
+          <a className={css.tel} href="tel:+380958202612">Телефонуй +380958202612</a>
+          <p className={css.tel_title}>Кожного дня з 09:00 - 20:00</p>
         </div>
       </section>
+
+      <Social />
+
+      <div>
+        відгуки
+      </div>
     </>
   );
 }

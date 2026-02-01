@@ -1,0 +1,37 @@
+.construction_section {
+    display: flex;
+    justify-content: center;
+    /* по горизонталі */
+    align-items: center;
+    /* по вертикалі */
+    min-height: 100vh;
+    /* займає всю висоту екрану */
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.construction_block {
+    text-align: center;
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.construction_title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.construction_text {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.construction_icon {
+    font-size: 3rem;
+}

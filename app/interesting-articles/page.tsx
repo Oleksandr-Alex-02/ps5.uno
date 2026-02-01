@@ -1,7 +1,15 @@
+import InDevelopment from '@/components/InDevelopment/InDevelopment'
 
 
 const Interesting = () => {
-    return <div>interesting-articles</div>;
+    const isDevelopment = true;
+    // const isDevelopment = false;
+
+    return (
+        <section>
+            {isDevelopment ? <InDevelopment /> : ""}
+        </section>
+    );
 };
 
 export default Interesting;

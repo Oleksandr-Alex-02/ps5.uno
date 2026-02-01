@@ -19,8 +19,8 @@ const Navigation = () => {
 
     return (
         <section className={`${css.navigation} ${scrolled ? css.scrolled : ""}`}>
-            <nav className={css.title}>
-                <p className={css.pp}>Оренда техніки у Києві +380958202612</p>
+            <nav className={css.nav}>
+                <p className={css.title}>Оренда техніки у Києві +380958202612</p>
                 <ul className={css.ul}>
                     <li><Link href='/'>Оренда ПС5</Link></li>
                     <li><Link href='/generator'>Оренда генераторів</Link></li>

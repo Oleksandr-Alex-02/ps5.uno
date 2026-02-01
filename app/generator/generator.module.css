@@ -1,0 +1,73 @@
+.container_generator {
+    display: flex;
+    text-align: center;
+    min-height: 600px;
+    /* min-height: 100vh; */
+    color: #FFFFFF;
+
+    background-image: url("/power-generators.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 176, 255, 1);
+
+}
+
+.hero {
+    margin: auto;
+    display: flex;
+    margin-top: 255px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero_title {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 3.5em;
+    line-height: 1.26;
+}
+
+.hero_button {
+    margin: auto;
+    margin-top: 90px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    background-color: rgb(2, 110, 159);
+}
+
+.hero_section {
+    background: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+.tel_blok {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: row;
+    gap: 350px;
+}
+
+.tel {
+    font-size: 23px;
+    color: #007bff;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.tel:hover {
+    transform: scale(1.10);
+    text-decoration: #218838;
+    color: #218838;
+}
+
+.tel_title {
+    font-size: 23px;
+}
