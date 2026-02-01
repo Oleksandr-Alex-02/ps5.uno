@@ -10,33 +10,32 @@ const Social = () => {
         <ul className={css.social}>
             <li className={css.li}>
                 <a href="https://t.me/mxiaomi" target="_blank" rel="noopener noreferrer">
-                    <FaTelegram className={css.icon_telegram} />
+                    <FaTelegram className={`${css.icon} ${css.icon_telegram}`} />
                 </a>
             </li>
             <li className={css.li}>
                 <a href="viber://chat?number=%2B380931234567" target="_blank" rel="noopener noreferrer">
-                    <FaViber className={css.icon_viber} />
+                    <FaViber className={`${css.icon} ${css.icon_viber}`} />
                 </a>
             </li>
             <li className={css.li}>
                 <a href="tel:+380958202612">
-                    <BsTelephone className={css.icon_phone} />
+                    <BsTelephone className={`${css.icon} ${css.icon_phone}`} />
                 </a>
             </li>
             <li className={css.li}>
                 <a href="https://instagram.com/username" target="_blank" rel="noopener noreferrer">
-                    <FaInstagram className={css.icon_instagram} />
+                    <FaInstagram className={`${css.icon} ${css.icon_instagram}`} />
                 </a>
             </li>
             <li className={css.li}>
                 <a href="https://www.tiktok.com/@username" target="_blank" rel="noopener noreferrer">
-                    <AiFillTikTok className={css.icon_tiktok} />
+                    <AiFillTikTok className={`${css.icon} ${css.icon_tiktok}`} />
                 </a>
             </li>
         </ul>
     )
 }
-
 
 
 export default Social;

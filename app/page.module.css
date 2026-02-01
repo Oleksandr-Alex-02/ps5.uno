@@ -71,7 +71,10 @@
     margin: 40px auto;
     max-width: 1200px;
     padding: 20px;
+
+    scroll-margin-top: 90px;
 }
+
 
 /* Окремий блок для кожної приставки */
 .rent_item {
@@ -231,9 +234,11 @@
 .tel {
     font-size: 23px;
     color: #007bff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .tel:hover {
+    transform: scale(1.10);
     text-decoration: #218838;
     color: #218838;
 }

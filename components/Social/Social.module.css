@@ -21,27 +21,32 @@
     border-radius: 10px;
 }
 
-.icon_telegram {
+.icon {
     font-size: 45px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.icon_telegram {
     color: #0088cc;
 }
 
 .icon_viber {
-    font-size: 45px;
     color: #7360f2;
 }
 
 .icon_phone {
-    font-size: 45px;
     color: #24d247;
 }
 
 .icon_instagram {
-    font-size: 45px;
     color: #833AB4;
 }
 
 .icon_tiktok {
-    font-size: 45px;
     color: #000000;
+}
+
+.icon:hover {
+    transform: scale(1.3);
 }

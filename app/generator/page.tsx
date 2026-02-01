@@ -1,13 +1,9 @@
-// import InDevelopment from '@/components/InDevelopment/InDevelopment'
 
 import css from './generator.module.css'
 import { Bakunska } from '@/components/Address/Address';
 import Generator from '@/components/Generators/Generators';
 
 const Generators = () => {
-    // const isDevelopment = true;
-    // const isDevelopment = false;
-
 
     return (
         <>
@@ -20,7 +16,9 @@ const Generators = () => {
 
             <Generator />
 
-            <Bakunska />
+            <section id="pickup_location" className={css.pickup_location}>
+                <Bakunska />
+            </section>
 
             <section className={css.hero_section}>
                 <div className={css.tel_blok}>

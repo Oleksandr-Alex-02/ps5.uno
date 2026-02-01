@@ -25,7 +25,7 @@ const Navigation = () => {
                     <li><Link href='/'>Оренда ПС5</Link></li>
                     <li><Link href='/generator'>Оренда генераторів</Link></li>
                     <li><Link href='/ninebot'>Оренда електросамокатів</Link></li>
-                    <li><Link href='/interesting-articles'>Місцезнаходження</Link></li>
+                    <li><a href='#pickup_location'>Місцезнаходження</a></li>
                     <li><a href="tel:+380958202612">+380958202612</a></li>
                 </ul>
             </nav>

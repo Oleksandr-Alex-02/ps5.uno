@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 import css from "./page.module.css"
 import Social from "@/components/Social/Social"
@@ -22,8 +23,16 @@ export default function Home() {
           умови та доступні тарифи</p>
 
         <div className={css.rent_block}>
+
           {/* Sony PlayStation 5 */}
           <div className={`${css.rent_item} ${css.ps5}`}>
+            <Image
+              src="/ps-5.png"
+              alt="Generator preview"
+              width={200}
+              height={200}
+              priority      // якщо це важливе зображення
+            />
             <h2 className={css.rent_title}>Sony PlayStation 5:</h2>
 
             <p className={css.deposit_label}>Застава</p>
@@ -52,6 +61,13 @@ export default function Home() {
 
           {/* Sony PlayStation 4 Pro */}
           <div className={`${css.rent_item} ${css.ps4pro}`}>
+            <Image
+              src="/cropped-cropped-598d1d58478800a22818f0a7a4994d5b-1.png"
+              alt="Generator preview"
+              width={200}
+              height={200}
+              priority      // якщо це важливе зображення
+            />
             <h2 className={css.rent_title}>Sony PlayStation 4 Pro:</h2>
 
             <p className={css.deposit_label}>Застава</p>
@@ -113,7 +129,7 @@ export default function Home() {
         </button>
       </section>
 
-      <section className={css.rent_block}>
+      <section id="pickup_location" className={css.rent_block}>
         <KharkivHighway />
         <Bakunska />
       </section>
