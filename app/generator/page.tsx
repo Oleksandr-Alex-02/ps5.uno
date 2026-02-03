@@ -1,7 +1,7 @@
 
 import css from './generator.module.css'
 import { Bakunska } from '@/components/Address/Address';
-import Generator from '@/components/Generators/Generators';
+import Generator from '@/components/Generators/GeneratorList';
 
 const Generators = () => {
 
