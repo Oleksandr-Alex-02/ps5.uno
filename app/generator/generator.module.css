@@ -49,10 +49,13 @@
 
 .tel_blok {
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
     flex-direction: row;
-    gap: 350px;
+
+    @media (max-width: 715px) {
+        flex-direction: column;
+    }
 }
 
 .tel {

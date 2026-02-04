@@ -32,7 +32,7 @@ type GeneratorCardProps = {
 
 const GeneratorCard = ({ gen }: GeneratorCardProps) => {
     return (
-        <div className="card">
+        <div>
             <Image
                 src={gen.image ?? "/generators/electric-power-generator.webp"}
                 alt={gen.model ?? "Generator preview"}
