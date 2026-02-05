@@ -1,11 +1,21 @@
+.address {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 16px;
+}
+
+/* pickup block */
 .pickup_block {
     background-color: #fefefe;
     padding: 30px 20px;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    max-width: 800px;
     margin: 0 auto;
     text-align: center;
+    width: 600px;
+    max-width: 100%;
 }
 
 .pickup_text {
@@ -27,4 +37,46 @@
     height: 400px;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* планшети */
+@media (max-width: 768px) {
+    .address {
+        flex-direction: column;
+        /* адреса йде вертикально */
+        align-items: center;
+    }
+
+    .pickup_block {
+        width: 90%;
+        padding: 20px 15px;
+    }
+
+    .pickup_map {
+        height: 300px;
+    }
+
+    .pickup_address {
+        font-size: 1.1rem;
+    }
+}
+
+/* мобільні */
+@media (max-width: 480px) {
+    .pickup_block {
+        width: 100%;
+        padding: 16px 12px;
+    }
+
+    .pickup_text {
+        font-size: 0.9rem;
+    }
+
+    .pickup_address {
+        font-size: 1rem;
+    }
+
+    .pickup_map {
+        height: 220px;
+    }
 }

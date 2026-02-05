@@ -2,6 +2,7 @@
 import css from './generator.module.css'
 import { Bakunska } from '@/components/Address/Address';
 import Generator from '@/components/Generators/GeneratorList';
+import Phone from '@/components/Phone/Phone';
 
 const Generators = () => {
 
@@ -16,16 +17,13 @@ const Generators = () => {
 
             <Generator />
 
-            <section id="pickup_location" className={css.pickup_location}>
-                <Bakunska />
+            <section id="pickup_location" className={css.rent_block}>
+                <ul className={css.address}>
+                    <Bakunska />
+                </ul>
             </section>
 
-            <section className={css.hero_section}>
-                <div className={css.tel_blok}>
-                    <a className={css.tel} href="tel:+380958202612">Телефонуй +380958202612</a>
-                    <p className={css.tel_title}>Кожного дня з 09:00 - 20:00</p>
-                </div>
-            </section>
+            <Phone />
         </>
     );
 };

@@ -3,7 +3,7 @@ import css from './Address.module.css'
 
 export const Bakunska = () => {
     return (
-        <div className={css.pickup_block}>
+        <li className={css.pickup_block}>
             <p className={css.pickup_text}>
                 На правому березі можна забрати замовлення за адресою:
             </p>
@@ -19,14 +19,14 @@ export const Bakunska = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
             />
-        </div>
+        </li>
     )
 };
 
 export const KharkivHighway = () => {
 
     return (
-        <div className={css.pickup_block}>
+        <li className={css.pickup_block}>
             <p className={css.pickup_text}>На лівому березі чекатимемо вас тут:</p>
             <p className={css.pickup_address}>Харківське шосе, 15А</p>
             <iframe
@@ -38,6 +38,6 @@ export const KharkivHighway = () => {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        </li>
     )
 };

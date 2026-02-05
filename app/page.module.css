@@ -1,65 +1,3 @@
-.container_hero {
-    display: flex;
-    text-align: center;
-    min-height: 600px;
-    min-height: 100vh;
-    color: #FFFFFF;
-
-    background-image: url("/hore.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: rgba(0, 176, 255, 1);
-
-}
-
-.hero {
-    margin: auto;
-    display: flex;
-    margin-top: 255px;
-    flex-direction: column;
-    text-align: center;
-}
-
-.hero_title {
-    font-family: Montserrat;
-    font-weight: 500;
-    font-size: 3.5em;
-    line-height: 1.26;
-}
-
-.hero_button {
-    margin: auto;
-    margin-top: 90px;
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-    background-color: rgb(2, 110, 159);
-}
-
-.info_title {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 16px;
-
-    margin-top: 120px;
-
-    font-weight: 700;
-    font-size: 42px;
-
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-    text-align: center;
-    color: var(--color-scheme-1-text);
-}
-
-/* Головний контейнер */
 .rent_block {
     display: flex;
     gap: 20px;
@@ -75,30 +13,6 @@
     scroll-margin-top: 90px;
 }
 
-
-/* Окремий блок для кожної приставки */
-.rent_item {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    background: #fafafa;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Заголовки */
-.rent_title {
-    font-size: 1.6rem;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.price_title {
-    font-size: 1.3rem;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: #444;
-}
-
 /* Застава */
 .deposit_label {
     font-weight: bold;
@@ -111,141 +25,21 @@
     color: #555;
 }
 
-/* Список цін */
-.price_list {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-}
-
-.price_item {
-    padding: 6px 0;
-    border-bottom: 1px dashed #ccc;
-    color: #333;
-}
-
-.price_item:last-child {
-    border-bottom: none;
-}
-
-/* Модифікатори для різних моделей */
-.ps5 {
-    border-left: 5px solid #007bff;
-    /* синій акцент */
-}
-
-.ps4pro {
-    border-left: 5px solid #28a745;
-    /* зелений акцент */
-}
-
-/* ДОСТАВКА ПО КИЄВУ */
-
-.delivery_section {
-    background-color: #f9f9f9;
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
-.section_title {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 30px;
-    text-align: center;
-    color: #333;
-}
-
-.sub_title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: #007bff;
-}
-
-.delivery_option {
-    background-color: #fff;
-    border-left: 4px solid #007bff;
-    padding: 15px 20px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-}
-
-.delivery_text {
-    font-size: 1rem;
-    color: #444;
-    margin-bottom: 5px;
-}
-
-.delivery_note {
-    font-size: 0.9rem;
-    color: #888;
-    display: block;
-}
-
-.delivery_extra {
-    margin: 20px 0;
-    font-size: 1rem;
-    color: #555;
-}
-
-.pickup_text {
-    font-size: 1rem;
-    color: #444;
-    margin-bottom: 5px;
-}
-
-.call_button {
-    margin-top: 20px;
-    background-color: #28a745;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.call_button:hover {
-    background-color: #218838;
-}
-
-.call_link {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-
-/* телефон під мапою */
-.tel_blok {
+.address {
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-direction: row;
-    gap: 350px;
+    gap: 16px;
 }
 
-.tel {
-    font-size: 23px;
-    color: #007bff;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+@media (max-width: 768px) {
+    .address {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-.tel:hover {
-    transform: scale(1.10);
-    text-decoration: #218838;
-    color: #218838;
-}
-
-.tel_title {
-    font-size: 23px;
-}
 
 .hero_section {
     background: #f9f9f9;
