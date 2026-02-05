@@ -175,3 +175,9 @@
 .ul li a:hover {
     color: #00b0ff;
 }
+
+.GiHamburgerMenu {
+    color: #00b0ff;
+    width: 32px;
+    height: 32px;
+}

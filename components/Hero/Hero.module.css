@@ -28,6 +28,7 @@
 }
 
 .hero_button {
+    /* width: 100%; */
     margin: auto;
     margin-top: 90px;
     display: inline-block;
