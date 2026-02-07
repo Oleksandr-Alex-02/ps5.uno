@@ -13,19 +13,18 @@
     scroll-margin-top: 90px;
 }
 
-.container_generator {
+.container_hero {
     display: flex;
     text-align: center;
     min-height: 600px;
-    /* min-height: 100vh; */
+    min-height: 100vh;
     color: #FFFFFF;
 
-    background-image: url("/generators/power-generators.webp");
+    background-image: url("/generators/electric-power-generator.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: rgba(0, 176, 255, 1);
-
 }
 
 .hero {
@@ -44,6 +43,7 @@
 }
 
 .hero_button {
+    /* width: 100%; */
     margin: auto;
     margin-top: 90px;
     display: inline-block;

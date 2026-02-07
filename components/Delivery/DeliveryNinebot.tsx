@@ -2,7 +2,7 @@
 import css from './Delivery.module.css'
 
 
-const Delivery = () => {
+const DeliveryNinebot = () => {
 
     return (
         <section className={css.delivery_section}>
@@ -12,14 +12,14 @@ const Delivery = () => {
 
             <div className={css.delivery_option}>
                 <p className={css.delivery_text}>
-                    Від 500 грн при замовленні в межах міста.
+                    Від 600 грн при замовленні в межах міста.
                 </p>
                 <span className={css.delivery_note}>*вартість вказана за 1 виїзд</span>
             </div>
 
             <div className={css.delivery_option}>
                 <p className={css.delivery_text}>
-                    У радіусі 1 км від нас - 100 грн.
+                    У радіусі 2 км від нас - всього 200 грн.
                 </p>
                 <span className={css.delivery_note}>*вартість вказана за 1 виїзд</span>
             </div>
@@ -43,6 +43,6 @@ const Delivery = () => {
     )
 };
 
-export default Delivery;
+export default DeliveryNinebot;
 
 

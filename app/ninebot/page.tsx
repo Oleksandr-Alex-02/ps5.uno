@@ -1,9 +1,11 @@
 
-import Social from '@/components/Social/Social';
 import css from './ninebot.module.css'
-import Delivery from '@/components/Delivery/Delivery';
-import { KharkivHighway, Bakunska } from '@/components/Address/Address';
+
+import Social from '@/components/Social/Social';
 import Phone from '@/components/Phone/Phone';
+import DeliveryNinebot from '@/components/Delivery/DeliveryNinebot';
+import { KharkivHighway, Bakunska } from '@/components/Address/Address';
+import NinebotG30 from '@/components/GameConsoles/NinebotG30';
 
 
 const Ninebot = () => {
@@ -17,8 +19,8 @@ const Ninebot = () => {
                 </div>
             </section>
             <Social />
-
-            <Delivery />
+            <NinebotG30 />
+            <DeliveryNinebot />
 
             <section id="pickup_location" className={css.rent_block}>
                 <ul className={css.address}>
@@ -28,7 +30,7 @@ const Ninebot = () => {
             </section>
 
             <Phone />
-        </section>
+        </section >
     );
 };
 
