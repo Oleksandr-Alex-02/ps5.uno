@@ -1,0 +1,78 @@
+.rent_block {
+    display: flex;
+    gap: 20px;
+    /* відстань між блоками */
+    justify-content: center;
+    /* вирівнювання по центру */
+    align-items: flex-start;
+    /* вирівнювання по верхньому краю */
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 20px;
+
+    scroll-margin-top: 90px;
+}
+
+.container_generator {
+    display: flex;
+    text-align: center;
+    min-height: 600px;
+    /* min-height: 100vh; */
+    color: #FFFFFF;
+
+    background-image: url("/generators/power-generators.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 176, 255, 1);
+
+}
+
+.hero {
+    margin: auto;
+    display: flex;
+    margin-top: 255px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero_title {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 3.5em;
+    line-height: 1.26;
+}
+
+.hero_button {
+    margin: auto;
+    margin-top: 90px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    background-color: rgb(2, 110, 159);
+}
+
+
+.pickup_location {
+    scroll-margin-top: 90px;
+    /* відступ зверху при скролі */
+}
+
+.address {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 16px;
+}
+
+@media (max-width: 768px) {
+    .address {
+        flex-direction: column;
+        align-items: center;
+    }
+}
