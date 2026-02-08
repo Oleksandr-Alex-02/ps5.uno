@@ -6,19 +6,24 @@ import Phone from '@/components/Phone/Phone';
 import DeliveryNinebot from '@/components/Delivery/DeliveryNinebot';
 import { KharkivHighway, Bakunska } from '@/components/Address/Address';
 import NinebotG30 from '@/components/GameConsoles/NinebotG30';
+import SwiperSlider from '@/components/Swiper/Swiper';
 
 
 const Ninebot = () => {
 
     return (
         <section>
-            <section className={css.container_generator}>
+            <section className={css.container_ninebot}>
                 <div className={css.hero}>
                     <h1 className={css.hero_title}>Оренда електросамокатів</h1>
                     <a className={css.hero_button} href="tel:+380958202612">Зателефонувати +380958202612</a>
                 </div>
             </section>
             <Social />
+            <SwiperSlider />
+            <div className={css.displey}>
+                <h2 className={css.title}>Оренда електросамокатів У Києві</h2>
+            </div>
             <NinebotG30 />
             <DeliveryNinebot />
 

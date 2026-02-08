@@ -3,6 +3,7 @@ import css from './generator.module.css'
 import { Bakunska } from '@/components/Address/Address';
 import Generator from '@/components/Generators/GeneratorList';
 import Phone from '@/components/Phone/Phone';
+import Social from '@/components/Social/Social';
 
 const Generators = () => {
 
@@ -14,6 +15,8 @@ const Generators = () => {
                     <a className={css.hero_button} href="tel:+380958202612">Зателефонувати +380958202612</a>
                 </div>
             </section>
+
+            <Social />
 
             <Generator />
 
