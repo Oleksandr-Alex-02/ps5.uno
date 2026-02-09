@@ -10,6 +10,9 @@ const Navigation = () => {
     const [scrolled, setScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
 
+    const [ps5Open, setPs5Open] = useState(false);
+
+
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 50);
@@ -47,7 +50,22 @@ const Navigation = () => {
 
                 {/* меню */}
                 <ul className={`${css.ul} ${menuOpen ? css.show : ""}`}>
-                    <li><Link href='/' onClick={CloseMenu}>Оренда ПС5</Link></li>
+                    <li className={css.dropdown}>
+                        <div className={css.dropdownHeader}>
+                            <Link href="/" onClick={CloseMenu}>Оренда ПС5</Link>
+                            <button
+                                type="button"
+                                className={css.dropdownToggle}
+                                onClick={() => setPs5Open(!ps5Open)}
+                            >
+                                ▼
+                            </button>
+                        </div>
+                        <ul className={`${css.dropdownMenu} ${ps5Open ? css.show : ""}`}>
+                            <li><Link href="/" onClick={CloseMenu}>Цікаві статті</Link></li>
+                            <li><Link href="/" onClick={CloseMenu}>Що входить в PS‑5</Link></li>
+                        </ul>
+                    </li>
                     <li><Link href='/generator' onClick={CloseMenu}>Оренда генераторів</Link></li>
                     <li><Link href='/ninebot' onClick={CloseMenu}>Оренда електросамокатів</Link></li>
                     <li><a href='#pickup_location' onClick={CloseMenu}>Місцезнаходження</a></li>
