@@ -4,6 +4,9 @@ import Link from "next/link";
 import css from './Header.module.css';
 
 import { GiHamburgerMenu } from "react-icons/gi";
+// import { GiHamburgerMenu } from "react-icons/gi/index.js";
+// import { GiHamburgerMenu } from "react-icons/gi/index.mjs";
+
 import { useEffect, useState } from "react";
 
 const Navigation = () => {
@@ -31,7 +34,12 @@ const Navigation = () => {
 
     const CloseMenu = () => {
         setMenuOpen(false)
+        setPs5Open(false)
     };
+
+    const DropdownMenu = () => {
+        setPs5Open(!ps5Open)
+    }
 
 
     return (
@@ -56,14 +64,14 @@ const Navigation = () => {
                             <button
                                 type="button"
                                 className={css.dropdownToggle}
-                                onClick={() => setPs5Open(!ps5Open)}
+                                onClick={DropdownMenu}
                             >
                                 ▼
                             </button>
                         </div>
                         <ul className={`${css.dropdownMenu} ${ps5Open ? css.show : ""}`}>
-                            <li><Link href="/" onClick={CloseMenu}>Цікаві статті</Link></li>
-                            <li><Link href="/" onClick={CloseMenu}>Що входить в PS‑5</Link></li>
+                            <li><Link href="/interesting-articles" onClick={CloseMenu}>Цікаві статті</Link></li>
+                            <li><Link href="/includedPS5" onClick={CloseMenu}>Що входить в PS‑5</Link></li>
                         </ul>
                     </li>
                     <li><Link href='/generator' onClick={CloseMenu}>Оренда генераторів</Link></li>

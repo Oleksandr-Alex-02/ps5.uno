@@ -12,7 +12,7 @@ import SwiperSlider from '@/components/Swiper/Swiper';
 const Ninebot = () => {
 
     return (
-        <section>
+        <>
             <section className={css.container_ninebot}>
                 <div className={css.hero}>
                     <h1 className={css.hero_title}>Оренда електросамокатів</h1>
@@ -35,7 +35,7 @@ const Ninebot = () => {
             </section>
 
             <Phone />
-        </section >
+        </>
     );
 };
 

@@ -5,7 +5,6 @@
     width: 100%;
     height: 100px;
     background: rgba(0, 0, 0, 0.2);
-    /* напівпрозорий фон */
     color: #fff;
     display: flex;
     justify-content: center;
@@ -20,11 +19,9 @@
     justify-content: center;
     text-align: center;
     gap: 10px;
-
 }
 
 .title {
-    /* font-family: Montserrat; */
     font-weight: 600;
     text-decoration: none;
     font-size: 15px;
@@ -91,6 +88,11 @@
 
 /* адаптивність */
 @media (max-width: 768px) {
+    .navigation {
+        height: 60px;
+        padding: 8px 12px;
+    }
+
     .burger {
         display: flex;
     }
@@ -104,14 +106,15 @@
 
     .ul {
         position: absolute;
-        top: 70px;
-        right: 20px;
+        top: 60px;
+        left: 0;
+        right: 0;
         flex-direction: column;
         width: 100%;
         background: #fff;
         color: #000;
         padding: 20px;
-        border-radius: 8px;
+        border-radius: 0;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         display: none;
     }
@@ -119,126 +122,55 @@
     .ul.show {
         display: flex;
     }
-}
 
-/* модальне вікно */
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100dvh;
-    /* вся висота екрану */
-    z-index: 999;
-}
-
-.backdrop {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.modalContent {
-    position: relative;
-    background: #fff;
-    color: #000;
-    width: 100%;
-    max-width: 320px;
-    height: 100%;
-    padding: 40px 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    animation: slideIn 0.3s ease forwards;
-}
-
-/* анімація */
-@keyframes slideIn {
-    from {
-        transform: translateX(-100%);
+    .ul li a {
+        font-size: 1rem;
+        padding: 10px 0;
     }
-
-    to {
-        transform: translateX(0);
-    }
-}
-
-.ul li a {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: inherit;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.ul li a:hover {
-    color: #00b0ff;
-}
-
-.GiHamburgerMenu {
-    color: #00b0ff;
-    width: 32px;
-    height: 32px;
 }
 
 /* Випадаючий список */
-
 .dropdown {
     position: relative;
+}
+
+.dropdownHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdownToggle {
+    display: none;
+    background: none;
+    border: none;
+    color: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-left: 8px;
 }
 
 .dropdownMenu {
     position: absolute;
     top: 100%;
     left: 0;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
     background: #fff;
     color: #000;
-    list-style: none;
-    padding: 10px;
-    margin: 0;
     border-radius: 6px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    display: none;
     min-width: 180px;
     z-index: 1000;
-}
-
-.dropdownHeader {
-    display: block;
-}
-
-.dropdownToggle {
-    /* display: none; */
-    background: none;
-    border: none;
-    color: inherit;
-    font-weight: 600;
-    cursor: pointer;
-    margin-left: 20px;
-}
-
-@media (max-width: 768px) {
-    .dropdownMenu {
-        position: static;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-    }
-
-    .dropdownMenu.show {
-        max-height: 500px;
-    }
-
-    /* .dropdownToggle {
-        display: block;
-    } */
-
+    align-items: center;
 }
 
 .dropdownMenu li {
+    width: 200px;
     padding: 8px 12px;
-    width: 210px;
 }
 
 .dropdownMenu li a {
@@ -252,5 +184,30 @@
 }
 
 .dropdown:hover .dropdownMenu {
-    display: block;
+    display: flex;
+}
+
+/* мобільна адаптація для випадаючого меню */
+@media (max-width: 768px) {
+    .dropdownMenu {
+        position: static;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .dropdownMenu.show {
+        display: flex;
+        max-height: 500px;
+    }
+
+    .dropdownToggle {
+        display: block;
+    }
+}
+
+.GiHamburgerMenu {
+    color: #00b0ff;
+    width: 32px;
+    height: 32px;
 }
