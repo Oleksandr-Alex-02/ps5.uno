@@ -27,10 +27,10 @@ export const metadata = {
     description:
       "Оренда Sony PlayStation 5 та PlayStation 4 Pro з іграми на двох. Доступні тарифи та вигідні умови.",
     url: "hhttps://ps5-uno.vercel.app/",
-    siteName: "Оренда PlayStation Київ",
+    siteName: "Оренда PlayStation у Київ +380958202612",
     images: [
       {
-        url: "/ps-5.png",
+        url: "/PlayStation-5fon.png",
         width: 800,
         height: 600,
         alt: "Оренда PlayStation 5 у Києві",

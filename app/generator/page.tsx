@@ -2,6 +2,7 @@
 import css from './generator.module.css'
 import { Bakunska } from '@/components/Address/Address';
 import Generator from '@/components/Generators/GeneratorList';
+import InformationGenerator from '@/components/Generators/InformationGenerator/InformationGenerator';
 import Phone from '@/components/Phone/Phone';
 import Social from '@/components/Social/Social';
 
@@ -19,13 +20,13 @@ export const metadata = {
         title: "Оренда генераторів",
         description: "Оренда генераторів — сучасні моделі, повний комплект та вигідні умови.",
         url: "https://ps5-uno.vercel.app/generator",
-        siteName: "UNO PlayStation Rental",
+        siteName: "Оренда генераторів у Києві +380958202612",
         images: [
             {
                 url: "/generators/космо-генератори.png",
                 width: 800,
                 height: 600,
-                alt: "Оренда генераторів",
+                alt: "Оренда генераторів у Києві",
             }
         ],
         locale: "uk_UA",
@@ -50,6 +51,7 @@ const Generators = () => {
             <Social />
 
             <Generator />
+            <InformationGenerator />
 
             <section id="pickup_location" className={css.rent_block}>
                 <ul className={css.address}>

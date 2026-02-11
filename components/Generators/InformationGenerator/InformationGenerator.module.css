@@ -1,0 +1,70 @@
+.generatorSection {
+    padding: 40px 20px;
+    /* background: linear-gradient(135deg, #0a0a2a, #1c1c3c); */
+    /* color: #fff; */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.generatorTextBlock {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.generatorListBlock {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.generatorTitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    /* color: #00b0ff; */
+}
+
+.generatorSubtitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 20px 0 10px;
+    /* color: #ffcc00; */
+}
+
+.generatorText {
+    font-size: 1rem;
+    line-height: 1.7;
+    /* color: #e0e0e0; */
+    margin-bottom: 15px;
+}
+
+.generatorList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.generatorItem {
+    position: relative;
+    padding-left: 25px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    /* color: #f5f5f5; */
+}
+
+.generatorItem::before {
+    content: "⚡";
+    position: absolute;
+    left: 0;
+    /* color: #00b0ff; */
+}
+
+/* 🔹 Адаптація для мобільних */
+@media (max-width: 768px) {
+    .generatorList {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,6 +1,6 @@
 
 import Benefits from '@/components/Benefits/Benefits';
-import css from './includedPS5.module.css'
+import css from './top-games.module.css'
 
 import Games from "@/components/Games/Games"
 import Phone from "@/components/Phone/Phone";

@@ -71,7 +71,7 @@ const Navigation = () => {
                         </div>
                         <ul className={`${css.dropdownMenu} ${ps5Open ? css.show : ""}`}>
                             <li><Link href="/interesting-articles" onClick={CloseMenu}>Цікаві статті</Link></li>
-                            <li><Link href="/includedPS5" onClick={CloseMenu}>Що входить в PS‑5</Link></li>
+                            <li><Link href="/top-games" onClick={CloseMenu}>Що входить в PS‑5</Link></li>
                         </ul>
                     </li>
                     <li><Link href='/generator' onClick={CloseMenu}>Оренда генераторів</Link></li>
