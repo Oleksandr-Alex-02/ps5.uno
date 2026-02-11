@@ -1,9 +1,11 @@
 
+import Benefits from '@/components/Benefits/Benefits';
 import css from './includedPS5.module.css'
 
 import Games from "@/components/Games/Games"
 import Phone from "@/components/Phone/Phone";
 import Social from "@/components/Social/Social";
+import Equipment from '@/components/Equipment/Equipment';
 
 
 const Included = () => {
@@ -18,6 +20,8 @@ const Included = () => {
             </section>
             <Social />
             <Games />
+            <Benefits />
+            <Equipment />
             <Phone />
             <Social />
         </section>

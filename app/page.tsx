@@ -14,11 +14,13 @@ export const metadata = {
     "Оренда Sony PlayStation 5 та PlayStation 4 Pro у Києві. Вигідні тарифи, ігри на двох, гнучкі умови та доступні ціни. Телефонуйте: +380958202612.",
   keywords: [
     "оренда PlayStation Київ",
+    "оренда пс5",
     "оренда PS5",
     "оренда PS4 Pro",
     "оренда консолей Київ",
     "оренда ігрових приставок",
     "оренда Sony PlayStation",
+    "оренда приставки",
   ],
   openGraph: {
     title: "Оренда PlayStation у Києві",
@@ -29,8 +31,8 @@ export const metadata = {
     images: [
       {
         url: "/ps-5.png",
-        width: 1200,
-        height: 630,
+        width: 800,
+        height: 600,
         alt: "Оренда PlayStation 5 у Києві",
       },
     ],
