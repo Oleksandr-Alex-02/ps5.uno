@@ -1,13 +1,13 @@
+import Articles from '@/components/Articles/Articles';
 import InDevelopment from '@/components/InDevelopment/InDevelopment'
 
 
 const Interesting = () => {
-    const isDevelopment = true;
-    // const isDevelopment = false;
+    const isDevelopment = false;
 
     return (
         <section>
-            {isDevelopment ? <InDevelopment /> : ""}
+            {!isDevelopment ? <Articles /> : <InDevelopment />}
         </section>
     );
 };

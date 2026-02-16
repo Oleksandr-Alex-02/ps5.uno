@@ -1,0 +1,121 @@
+.articlesSection {
+    padding: 60px 20px;
+    /* background: linear-gradient(135deg, #0a0a2a, #1c1c3c); */
+    /* color: #fff; */
+}
+
+.articlesTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.articlesGroup {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.articlesGroup li {
+    height: 400px;
+}
+
+.articleCard {
+    padding: 20px;
+    color: #fff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.articleCard:hover {
+    transform: scaleX(1.4);
+    /* transform: scaleY(1.4); */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+
+    .articleHeading {
+        display: block;
+    }
+
+    .articleButton {
+        display: block;
+    }
+}
+
+.articleHeading {
+    display: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.articleButton {
+    display: none;
+    padding: 8px 16px;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.articleButton:hover {
+    background: #ff4081;
+}
+
+/* 🔹 Адаптація */
+@media (max-width: 768px) {
+    .articlesGroup {
+        grid-template-columns: 1fr;
+    }
+}
+
+.PS5_1 {
+    width: 100%;
+    background-image: url("/articlesPhoto/PS5-1.jpg");
+}
+
+.PS5_2 {
+    width: 100%;
+    background-image: url("/articlesPhoto/PS5-2.jpg");
+}
+
+.PS5_3 {
+    width: 100%;
+    background-image: url("/articlesPhoto/PS5-3.jpg");
+}
+
+.PS5_4 {
+    width: 100%;
+    background-image: url("/articlesPhoto/PS5-4.jpg");
+}
+
+.PS5_5 {
+    width: 100%;
+    background-image: url("/articlesPhoto/PS5-5.jpg");
+}
+
+.PS5_6 {
+    width: 100%;
+    background-image: url("/articlesPhoto/PS5-6.jpg");
+}
+
+.PS5_7 {
+    width: 100%;
+    background-image: url("/articlesPhoto/PS5-7.jpg");
+}
+
+.PS5_8 {
+    width: 100%;
+    background-image: url("/articlesPhoto/PS5-8.jpg");
+}
