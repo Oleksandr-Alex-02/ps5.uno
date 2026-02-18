@@ -1,10 +1,11 @@
 .articlesSection {
-    padding: 60px 20px;
+    padding: 0 80px;
     /* background: linear-gradient(135deg, #0a0a2a, #1c1c3c); */
     /* color: #fff; */
 }
 
 .articlesTitle {
+    padding-top: 20px;
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 40px;
@@ -118,4 +119,11 @@
 .PS5_8 {
     width: 100%;
     background-image: url("/articlesPhoto/PS5-8.jpg");
+}
+
+
+.artical_fon {
+    width: 100%;
+    height: 100px;
+    background-image: url(/fonCosmos.webp);
 }

@@ -6,6 +6,10 @@
     padding: 30px 0;
 }
 
+.article_name2 {
+    padding-bottom: 30px;
+}
+
 .article_title {
     margin: 0 auto;
 }
@@ -15,6 +19,16 @@
     flex-direction: column;
     gap: 10;
     margin-bottom: 30px;
+}
+
+.article_list {
+    display: grid;
+    padding-left: 50px;
+    gap: 8px;
+}
+
+.article_list li {
+    color: black;
 }
 
 .article_blok_button {
@@ -27,10 +41,7 @@
 .article_button {
     display: inline-block;
     padding: 12px 24px;
-    background: linear-gradient(135deg, #ff4081, #ff6f61);
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 600;
+    background-image: url(/fonCosmos.webp);
     text-align: center;
     text-decoration: none;
     border-radius: 8px;
@@ -38,8 +49,13 @@
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
+.article_button button {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 .article_button:hover {
-    background: linear-gradient(135deg, #ff6f61, #ff4081);
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }

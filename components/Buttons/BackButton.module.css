@@ -1,7 +1,7 @@
 .BackButton {
     display: inline-block;
     padding: 12px 24px;
-    background: linear-gradient(135deg, #ff4081, #ff6f61);
+    background-image: url(/fonCosmos.webp);
     color: #fff;
     font-size: 1rem;
     font-weight: 600;
@@ -13,7 +13,6 @@
 }
 
 .BackButton:hover {
-    background: linear-gradient(135deg, #ff6f61, #ff4081);
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }

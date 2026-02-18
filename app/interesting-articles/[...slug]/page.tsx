@@ -1,7 +1,6 @@
 
 import css from './interesting.module.css';
 
-import BackButton from "@/components/Buttons/BackButton";
 import Economical from "@/components/Articles/ArticlesList/economical-and-convenient";
 import Top from '@/components/Articles/ArticlesList/top';
 import Rent from '@/components/Articles/ArticlesList/rent';
@@ -12,29 +11,29 @@ import RentBuy from '@/components/Articles/ArticlesList/rent-vs-buy';
 import ConvenientRental from '@/components/Articles/ArticlesList/convenient-rental';
 
 
-type Props = {
+type ArticalProps = {
     params: Promise<{ slug: string[] }>;
 };
 
-const NotesByCategory = async ({ params }: Props) => {
-
+const InterestingArticals = async ({ params }: ArticalProps) => {
     const { slug } = await params;
-    const category = slug[0] === 'all' ? undefined : slug[0];
+    const artical = slug[0] === 'all' ? undefined : slug[0];
 
 
     return (
         <section className={css.conteuner}>
-            {category === 'economical-and-convenient' ? <Economical /> : ''}
-            {category === 'rent' ? <Rent /> : ''}
-            {category === 'top' ? <Top /> : ''}
-            {category === 'choice' ? <Choice /> : ''}
-            {category === 'playstation-on-holiday' ? <PlayStationOnHoliday /> : ''}
-            {category === 'hot-hits' ? <HotHits /> : ''}
-            {category === 'rent-vs-buy' ? <RentBuy /> : ''}
-            {category === 'convenient-rental' ? <ConvenientRental /> : ''}
+            <div className={css.artical_fon}></div>
+            {artical === 'economical-and-convenient' ? <Economical /> : ''}
+            {artical === 'rent' ? <Rent /> : ''}
+            {artical === 'top' ? <Top /> : ''}
+            {artical === 'choice' ? <Choice /> : ''}
+            {artical === 'playstation-on-holiday' ? <PlayStationOnHoliday /> : ''}
+            {artical === 'hot-hits' ? <HotHits /> : ''}
+            {artical === 'rent-vs-buy' ? <RentBuy /> : ''}
+            {artical === 'convenient-rental' ? <ConvenientRental /> : ''}
         </section >
 
     );
 };
 
-export default NotesByCategory;
+export default InterestingArticals;
