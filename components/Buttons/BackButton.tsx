@@ -7,8 +7,8 @@ const BackButton = () => {
     const router = useRouter();
 
     return (
-        <button className={css.BackButton} type="button" onClick={() => router.back()}>
-            Назад
+        <button className={css.button} type="button" onClick={() => router.back()}>
+            Повернутися Назад
         </button>
     );
 };

@@ -3,6 +3,38 @@
 import css from './Articles.module.css'
 import Link from 'next/link';
 
+export const metadata = {
+    title: "Цікаві статті",
+    description: "Цікаві статті про приставки PS5 та PS4-Pro",
+    keywords: [
+        "Цікаві статті",
+        "приставка пс5",
+        "соні плейштейшин",
+        "пс5",
+        "пс4",
+        "які ігри можна грати на пс5",
+    ],
+    openGraph: {
+        title: "Цікаві статті",
+        description: "Цікаві статті про приставки PS5 та PS4-Pro",
+        url: "https://ps5-uno.vercel.app/interesting-articles",
+        siteName: "Замовити в Києві +380958202612",
+        images: [
+            {
+                url: "/articlesPhoto/PS5-7.jpg",
+                width: 800,
+                height: 600,
+                alt: "Цікаві статті",
+            }
+        ],
+        locale: "uk_UA",
+        type: "website",
+    },
+    alternates: {
+        canonical: "https://ps5-uno.vercel.app/interesting-articles"
+    }
+}
+
 const Articles = () => {
 
     return (

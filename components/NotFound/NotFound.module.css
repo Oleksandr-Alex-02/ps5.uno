@@ -35,17 +35,21 @@
 .error button {
     display: inline-block;
     padding: 8px 16px;
-    background: #112675;
-    color: #fff;
     border-radius: 6px;
     text-decoration: none;
     font-weight: 600;
     transition: background 0.3s ease;
 }
 
+.blok_button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 300px;
+}
+
 .error a:hover,
 .error button:hover {
     color: #fff;
     font-family: var(--font-family);
-    background: #4044a7;
 }
