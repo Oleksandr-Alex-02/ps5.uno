@@ -65,3 +65,5 @@ const Generators = () => {
 };
 
 export default Generators;
+
+// поправив зображення
